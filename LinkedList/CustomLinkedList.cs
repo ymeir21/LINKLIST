@@ -48,12 +48,14 @@ namespace LinkedList
         }
         public string ToString()
         {
+            Item curr = Head;
             String res = " "; 
             while (curr.next != null)
             {
-                res = (res + name + ",");
+                res = (res + curr.name + ",");
                 curr = curr.next;
             }
+            return res;
         }
 
     }
